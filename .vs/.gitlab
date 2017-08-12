@@ -1,0 +1,11 @@
+{
+  "User": {
+    "id": 2,
+    "username": "blqw",
+    "name": "周子鉴",
+    "email": "21979018@qq.com",
+    "new_portrait": null,
+    "host": "http://172.16.1.242",
+    "two_factor_enabled": false
+  }
+}

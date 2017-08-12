@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31010.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26724.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blqw.Faller", "blqw.Faller\blqw.Faller.csproj", "{4EE617D5-D302-46E3-9B38-D313B86ADD07}"
 EndProject
@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "说明文件", "说明文�
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blqw.Literacy", "..\blqw-Literacy\blqw.Literacy\blqw.Literacy.csproj", "{D0C3B619-180A-407B-BE4A-9C1864B2A06D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,12 +32,11 @@ Global
 		{C1BFE225-9D67-4D41-A791-0A2D1F2D16D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1BFE225-9D67-4D41-A791-0A2D1F2D16D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1BFE225-9D67-4D41-A791-0A2D1F2D16D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0C3B619-180A-407B-BE4A-9C1864B2A06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0C3B619-180A-407B-BE4A-9C1864B2A06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0C3B619-180A-407B-BE4A-9C1864B2A06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0C3B619-180A-407B-BE4A-9C1864B2A06D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D940326-E648-4841-856B-1E9D0BEE95D8}
 	EndGlobalSection
 EndGlobal

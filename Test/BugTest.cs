@@ -18,6 +18,15 @@ namespace Test
             //parse.Parameters  //解析过程中得到的参数
             Assert.AreEqual(expected, sql);
         }
+
+        void Where2(string expected, Expression<Func<User, bool>> expr)
+        {
+            var parse = Faller.Create(expr);
+            var sql = parse.ToWhere(SqlServerSaw.Instance);
+            //parse.Parameters  //解析过程中得到的参数
+            Assert.AreEqual(expected, sql);
+        }
+
         void OrderBy(string expected, Expression<Func<User, object>> expr, bool asc)
         {
             var sql = Faller.Create(expr).ToOrderBy(OracleSaw.Instance, asc);
@@ -95,5 +104,20 @@ namespace Test
             Where("SEX = 0", u => !u.Sex);
         }
 
+
+
+        [TestMethod]
+        public void Where_String()
+        {
+            var name = "blqw";
+            Where("NAME = :saw_p0", u => u.Name == name);
+        }
+
+        [TestMethod]
+        public void Where_String2()
+        {
+            var name = "blqw";
+            Where2("Name = @saw_p0", u => u.Name == name);
+        }
     }
 }
